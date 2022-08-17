@@ -1,0 +1,53 @@
+print("! Welcome to the tip calculator! \n")
+
+           #  METHOD 1
+
+'''  
+total_bill = float(input("What was the total bill? : $"))
+print(" ")
+
+tip = float(input("What percentage tip would you like to give? 0, 10, 12, or 15? : "))
+print(" ")
+
+bill_split = float(input("How many people to split the bill? : "))
+print(" ")
+
+if tip == 0 :
+  value = total_bill / bill_split
+  print(value)
+  
+elif tip == 10 :
+  value = (total_bill * 1.10) / bill_split
+  print(value)
+  
+elif tip == 12 :
+  value = (total_bill * 1.12) / bill_split
+  print(value)
+elif tip == 15 :
+  value = (total_bill * 1.15) / bill_split
+  print(value)
+
+'''
+
+                   # METHOD 2
+
+
+total_bill = float(input("What was the total bill? : $"))
+print(" ")
+
+tip = float(input("What percentage tip would you like to give? 0, 10, 12, or 15? : "))
+print(" ")
+
+bill_split = float(input("How many people to split the bill? : "))
+print(" ")
+
+total_value = (total_bill * (1 + tip / 100)) / bill_split
+print(" ")
+
+print(total_value)
+  
+  
+  
+  
+  
+
